@@ -1,3 +1,2 @@
-export function test(): number {
-    return 0;
+export default class Try {
 }

@@ -2,7 +2,12 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/npm",
+    [
+      "@semantic-release/exec",
+      {
+        "publishCmd": "npm publish --access public --tag \"${nextRelease.version}\""
+      }
+    ],
     "@semantic-release/github"
   ]
 }

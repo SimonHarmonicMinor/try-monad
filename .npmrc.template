@@ -1,0 +1,3 @@
+_auth=base_64_token       # echo -n 'username:password' | openssl base64
+email=mail@example.com
+always-auth=true

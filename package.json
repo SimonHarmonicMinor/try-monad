@@ -12,7 +12,7 @@
     "semantic-release": "semantic-release"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",

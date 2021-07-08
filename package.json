@@ -1,12 +1,19 @@
 {
-  "name": "try-monad",
-  "version": "0.0.0-development",
+  "name": "@kirekov/try-monad",
+  "version": "0.0.0",
   "description": "Typescript Try monad",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "node ./cleanDist.js",
+    "lint": "eslint ./src --ext .ts,.tsx,.js,.jsx --max-warnings=0",
+    "prebuild": "run-s clean lint",
+    "build": "tsc --build tsconfig.json",
     "semantic-release": "semantic-release"
   },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/SimonHarmonicMinor/try-monad.git"
@@ -20,7 +27,11 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
+    "@types/node": "^12.0.0",
+    "@types/jest": "^26.0.15",
     "eslint": "^7.30.0",
+    "typescript": "^4.1.2",
+    "npm-run-all": "^4.1.5",
     "semantic-release": "^17.4.4"
   }
 }

@@ -5,7 +5,7 @@
     [
       "@semantic-release/exec",
       {
-        "publishCmd": "npm publish --access public --tag \"${nextRelease.version}\""
+        "publishCmd": "npm publish --access public --tag ${nextRelease.version}"
       }
     ],
     "@semantic-release/github"

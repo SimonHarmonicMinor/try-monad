@@ -2,12 +2,7 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    [
-      "@semantic-release/exec",
-      {
-        "publishCmd": "node setVersionToPackageJson.js ${nextRelease.version} && npm publish --access public"
-      }
-    ],
+    "@semantic-release/npm",
     "@semantic-release/github"
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "name": "try-monad",
+  "version": "0.0.0-development",
+  "description": "Typescript Try monad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimonHarmonicMinor/try-monad.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SimonHarmonicMinor/try-monad/issues"
+  },
+  "homepage": "https://github.com/SimonHarmonicMinor/try-monad#readme",
+  "devDependencies": {
+    "semantic-release": "^17.4.4"
+  }
+}

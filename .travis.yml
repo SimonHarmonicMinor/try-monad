@@ -9,3 +9,10 @@ branches:
 
 script:
   - echo "build"
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: bash ./deploy.sh
+    on:
+      branch: master

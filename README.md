@@ -8,3 +8,4 @@ Typescript Try monad
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=SimonHarmonicMinor_try-monad&metric=coverage)](https://sonarcloud.io/dashboard?id=SimonHarmonicMinor_try-monad)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=SimonHarmonicMinor_try-monad&metric=code_smells)](https://sonarcloud.io/dashboard?id=SimonHarmonicMinor_try-monad)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=SimonHarmonicMinor_try-monad&metric=bugs)](https://sonarcloud.io/dashboard?id=SimonHarmonicMinor_try-monad)
+![NPM](https://img.shields.io/npm/l/@kirekov/try-monad)

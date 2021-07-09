@@ -12,9 +12,9 @@ parserOptions:
 plugins:
   - '@typescript-eslint'
 rules:
-  indent:
-    - error
-    - 4
+  prettier/prettier:
+    - "error"
+    - singleQuote: true
   linebreak-style:
     - error
     - unix

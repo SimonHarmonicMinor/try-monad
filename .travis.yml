@@ -3,11 +3,18 @@ language: node_js
 node_js:
   - 14
 
+addons:
+  sonarcloud:
+    organization: "simonharmonicminor"
+    token:
+      secure: "n9v0xXsYkCxn3PyWvsw3Wtr+C7v9iWfGllpdlqQiZy8CmGIBeJgNnEdbB6WiHhca6rXcmmhTnL1ZrQVuQ/e0fEx9ZxQDBwQeMrU0KOMVZTlBUhttebe7qyzSwfm4WVj8t3v1jAuwMmHu56/C+qvM5ZZz+AyrSyUF4AnNJ0Q5OYjnubVozeSq8yERU5nxL4PrB8fuA2z1noA3XuYruW4dkAQ1h+DsEzCGgClIj9Xe0Dk79mbuCgpVi4hE/3tHdPjsuvscwOOhtfmXL1WK2VYekQN0aNOywgqU4mPZb+U1Ur+FQwTWHc9WZCIsmrN/+Q5YsUmWN2wusTBeaveMCg7l9El4sr6vr1TxmJL8vD0mnmHx3+rz5GrAM0s9C2JSbUw2slc1mi7BKxlmeJg1cnlAFGCa7Z0qSh3x77bAerSybuvATuGVg3sZ7/XbrsRQRuRAU2Ae4DOTv7b+p7DhoLPSAdTLKmXLBDasj+4yCV7UQ18L1PDeo5hbMromSf1fSesid2tScq4FypKEoxqeJvEeL7jYpFRiuTjWSsBb1tUnBcHt2ZIXn24G2loT3zehGWtPicnpizDvvqz9mzj4Jpay5lLGQuLyjJR08To6S2EzCJOiao+ozIfi9erwkFq8vjAWgxIlbhlfbw0FqEYzvbGwtG7Z3cgekGQl8nPFHZkwL2I="
+
 branches:
   only:
     - master
 
 script:
+  - sonar-scanner
   - npm run build
 
 deploy:

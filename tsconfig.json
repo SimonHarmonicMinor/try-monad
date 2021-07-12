@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "inlineSourceMap": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,

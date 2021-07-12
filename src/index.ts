@@ -1,1 +1,3 @@
-export default class Try {}
+import { Try } from './try';
+
+export default Try;

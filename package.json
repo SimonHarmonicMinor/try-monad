@@ -8,7 +8,7 @@
     "clean": "node ./cleanDist.js",
     "lint": "eslint ./src --ext .ts,.tsx,.js,.jsx --max-warnings=0",
     "test": "jest",
-    "prebuild": "run-s clean lint",
+    "prebuild": "run-s clean lint test",
     "build": "tsc --build tsconfig.json",
     "semantic-release": "semantic-release",
     "prepare": "husky install"

@@ -14,8 +14,8 @@ branches:
     - master
 
 script:
-  - sonar-scanner
   - npm run build
+  - sonar-scanner
 
 deploy:
   - provider: script

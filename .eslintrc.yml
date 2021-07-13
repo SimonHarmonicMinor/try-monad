@@ -13,6 +13,7 @@ parserOptions:
 plugins:
   - '@typescript-eslint'
   - unicorn
+  - 'eslint-plugin-tsdoc'
 rules:
   prettier/prettier:
     - "error"
@@ -112,3 +113,4 @@ rules:
   "unicorn/require-post-message-target-origin": "error"
   "unicorn/string-content": "off"
   "unicorn/throw-new-error": "error"
+  tsdoc/syntax: error

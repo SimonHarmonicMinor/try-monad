@@ -28,6 +28,8 @@ yarn add @kirekov/try-monad
 The monad purpose is to build a pipeline of computations that might fail.
 
 ```typescript
+import Try from '@kirekov/try-monad';
+
 const result =
     Try.of(() => fetchUserCard(userId))
        .filter(card => card.isAccessible)
